@@ -414,3 +414,9 @@ b{
 
 
 
+a{
+
+  @include typeface-2(p3, desktop);
+  color: $gray-2;
+  text-decoration: none;
+}
