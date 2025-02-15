@@ -1597,4 +1597,69 @@ header a span {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
+}
+
+section.hero h1 div {
+  display: inline-block;
+  overflow: hidden;
+  height: 4rem;
+  width: -moz-min-content;
+  width: min-content;
+}
+section.hero h1 {
+  max-width: 40rem;
+}
+section.hero h1 span {
+  display: block;
+  animation: slideUp 6s infinite ease;
+}
+section.hero h1 span:nth-child(1) {
+  color: #06B6D4;
+}
+section.hero h1 span:nth-child(2) {
+  color: #DB2777;
+}
+section.hero h1 span:nth-child(3) {
+  color: #16A34A;
+}
+section.hero h1 span:nth-child(4) {
+  color: #06B6D4;
+}
+
+@keyframes slideUp {
+  0%, 22% {
+    transform: translateY(0);
+  }
+  24% {
+    transform: translateY(calc(-5rem - 5px));
+  }
+  26% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+  30%, 55% {
+    transform: translateY(-5rem);
+  }
+  57% {
+    transform: translateY(calc(-10rem - 5px));
+  }
+  59% {
+    transform: translateY(calc(-10rem + 5px));
+  }
+  63%, 88% {
+    transform: translateY(-10rem);
+  }
+  90% {
+    transform: translateY(calc(-15rem - 5px));
+  }
+  92% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+  96%, 100% {
+    transform: translateY(-15rem);
+  }
+}
+@media screen and (max-width: 960px) {
+  section.hero h1 span {
+    animation: none;
+  }
 }/*# sourceMappingURL=index.css.map */
