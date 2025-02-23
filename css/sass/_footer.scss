@@ -8,6 +8,11 @@ footer{
   align-items: center;
   justify-content: space-between;
 
+  @include responsive(s){
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   & .logo{
     display: flex;
     align-items: center;
@@ -29,7 +34,13 @@ footer{
   & nav{
     display: flex;
     gap: 2rem;
-
+    
+    @include responsive(s){
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
     & a{
       width: fit-content;
       position: relative;
@@ -60,6 +71,10 @@ footer{
   & .social-links{
     display: flex;
     align-items: center;
+
+    @include responsive(s){
+      margin-top: 30px;
+    }
     
     & a{
       width: 1.5rem;

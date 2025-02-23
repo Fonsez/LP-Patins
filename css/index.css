@@ -2282,6 +2282,13 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 960px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 footer .logo {
   display: flex;
   align-items: center;
@@ -2298,6 +2305,14 @@ footer .logo img:hover {
 footer nav {
   display: flex;
   gap: 2rem;
+}
+@media screen and (max-width: 960px) {
+  footer nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
 }
 footer nav a {
   width: -moz-fit-content;
@@ -2322,6 +2337,11 @@ footer nav a::after {
 footer .social-links {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 960px) {
+  footer .social-links {
+    margin-top: 30px;
+  }
 }
 footer .social-links a {
   width: 1.5rem;
