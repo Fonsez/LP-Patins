@@ -1915,12 +1915,12 @@ svg, img {
   height: 24px;
 }
 
-.icon {
+.icon-h {
   max-width: 48px;
   transition: 0.5s ease;
 }
 @media screen and (max-width: 960px) {
-  .icon {
+  .icon-h {
     max-width: 32px;
   }
 }
