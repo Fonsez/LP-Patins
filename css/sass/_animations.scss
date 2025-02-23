@@ -38,3 +38,11 @@
     transform: translateX(-132px);
   }
 }
+
+// gallery
+@keyframes image-appear{
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
