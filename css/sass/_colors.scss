@@ -54,7 +54,23 @@ $yellow-light: #ffd76b;
 
 
 
+.bg-gradient-animate{
+  background: linear-gradient(
+    45deg,
+    $snitap-sky-light,
+    $snitap-joy-light
+  );
+  background-size: 100%;
+  background-position: 0 50%;
 
+  animation: bg-gradient 20s ease ifinite;
+}
+
+@keyframes bg-gradient{
+  50%{
+    background-position: 100% 50%;
+  }
+}
 
 
 

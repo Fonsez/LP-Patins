@@ -27,3 +27,14 @@
   92% { transform: translateY(calc(-15rem + 5px)); }
   96%, 100% { transform: translateY(-15rem); }
 }
+
+
+
+
+// banner
+
+@keyframes rolling{
+  to{
+    transform: translateX(-132px);
+  }
+}

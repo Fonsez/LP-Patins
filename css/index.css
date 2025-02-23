@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+.bg-gradient-animate {
+  background: linear-gradient(45deg, #67E8F9, #F472B6);
+  background-size: 100%;
+  background-position: 0 50%;
+  animation: bg-gradient 20s ease ifinite;
+}
+
+@keyframes bg-gradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
 .bg-section {
   background-color: rgba(15, 20, 31, 0.5);
 }
@@ -1521,7 +1533,6 @@ body::-webkit-scrollbar-thumb {
 
 svg, img {
   width: 100%;
-  height: auto;
 }
 
 .bag {
@@ -1648,6 +1659,11 @@ svg, img {
   }
   96%, 100% {
     transform: translateY(-15rem);
+  }
+}
+@keyframes rolling {
+  to {
+    transform: translateX(-132px);
   }
 }
 header {
@@ -1803,4 +1819,19 @@ section.hero .patins img[src*="Stars 2"] {
   section.hero h1 span {
     animation: none;
   }
+}
+.banner {
+  width: 100%;
+  padding-block: 2.5rem;
+  overflow: hidden;
+}
+.banner .scroller {
+  width: 100%;
+  overflow: hidden;
+  padding-block: 1rem;
+}
+.banner .rolling {
+  display: flex;
+  gap: 1.5rem;
+  animation: rolling 2s linear infinite;
 }/*# sourceMappingURL=index.css.map */
