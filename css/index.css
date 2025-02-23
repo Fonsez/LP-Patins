@@ -5,6 +5,28 @@
   box-sizing: border-box;
 }
 
+.bg-section {
+  background-color: rgba(15, 20, 31, 0.5);
+}
+
+.card-danger {
+  border: 2px solid #F03D3D;
+  border-radius: 4px;
+  background-color: rgba(240, 61, 61, 0.2);
+}
+
+.card-success {
+  border: 2px solid #0BB07B;
+  border-radius: 4px;
+  background-color: rgba(11, 176, 123, 0.2);
+}
+
+.card-warning {
+  border: 2px solid #FFCE52;
+  border-radius: 4px;
+  background-color: rgba(255, 206, 82, 0.2);
+}
+
 .grid-1 {
   width: calc(8.3333333333% - 32px);
   margin: 16px;
@@ -1501,6 +1523,11 @@ svg, img {
   width: 100%;
 }
 
+.bag {
+  width: 24px;
+  height: 24px;
+}
+
 .icon {
   max-width: 48px;
   transition: 0.5s ease;
@@ -1624,6 +1651,35 @@ section.hero h1 span:nth-child(3) {
 }
 section.hero h1 span:nth-child(4) {
   color: #06B6D4;
+}
+section.hero .buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: flex-start;
+}
+section.hero .buttons .button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 5rem;
+  transition: 0.5s ease;
+}
+section.hero .buttons .button.buy {
+  padding: 1.5rem 3rem;
+  background-color: #FFCD1E;
+}
+section.hero .buttons .button.play span {
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+}
+section.hero .buttons .button:hover {
+  scale: 1.1;
+}
+section.hero .buttons .shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 9px 9px rgba(0, 0, 0, 0.09), 0 20px 12px rgba(0, 0, 0, 0.05), 0 36px 15px rgba(0, 0, 0, 0.01);
 }
 
 @keyframes slideUp {
